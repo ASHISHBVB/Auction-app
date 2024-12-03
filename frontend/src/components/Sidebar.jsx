@@ -8,7 +8,11 @@ export const Sidebar = () => {
     <>
       <section className="sidebar flex flex-col justify-between h-full">
         <div className="profile flex items-center text-center justify-center gap-8 flex-col mb-8">
-          <img src={User1} alt="" className="w-32 h-32 rounded-full object-cover" />
+          <img
+            src={User1}
+            alt=""
+            className="w-32 h-32 rounded-full object-cover"
+          />
           <div>
             <Title className="capitalize">Jayesh</Title>
             <Caption>example@gmail.com</Caption>
@@ -16,7 +20,11 @@ export const Sidebar = () => {
         </div>
 
         <div>
-          <CustomNavLink href="/dashboard" isActive={location.pathname === "/dashboard"} className={className}>
+          <CustomNavLink
+            href="/dashboard"
+            isActive={location.pathname === "/dashboard"}
+            className={className}
+          >
             <span>
               <CiGrid41 size={22} />
             </span>
@@ -25,13 +33,21 @@ export const Sidebar = () => {
 
           {(role === "seller" || role === "admin") && (
             <>
-              <CustomNavLink href="/product" isActive={location.pathname === "/product"} className={className}>
+              <CustomNavLink
+                href="/product"
+                isActive={location.pathname === "/product"}
+                className={className}
+              >
                 <span>
                   <MdOutlineCategory size={22} />
                 </span>
                 <span>My Products</span>
               </CustomNavLink>
-              <CustomNavLink href="/add" isActive={location.pathname === "/add"} className={className}>
+              <CustomNavLink
+                href="/add"
+                isActive={location.pathname === "/add"}
+                className={className}
+              >
                 <span>
                   <FaPlusCircle size={22} />
                 </span>
@@ -44,27 +60,43 @@ export const Sidebar = () => {
 
           {role === "admin" && (
             <>
-              <CustomNavLink href="/userlist" isActive={location.pathname === "/userlist"} className={className}>
+              <CustomNavLink
+                href="/userlist"
+                isActive={location.pathname === "/userlist"}
+                className={className}
+              >
                 <span>
                   <FiUser size={22} />
                 </span>
                 <span>All User</span>
               </CustomNavLink>
 
-              <CustomNavLink href="/product/admin" isActive={location.pathname === "/product/admin"} className={className}>
+              <CustomNavLink
+                href="/product/admin"
+                isActive={location.pathname === "/product/admin"}
+                className={className}
+              >
                 <span>
                   <CgProductHunt size={22} />
                 </span>
                 <span> All product List</span>
               </CustomNavLink>
 
-              <CustomNavLink href="/category" isActive={location.pathname === "/category"} className={className}>
+              <CustomNavLink
+                href="/category"
+                isActive={location.pathname === "/category"}
+                className={className}
+              >
                 <span>
                   <MdOutlineCategory size={22} />
                 </span>
                 <span>Categories</span>
               </CustomNavLink>
-              <CustomNavLink href="/admin/income" isActive={location.pathname === "/admin/income"} className={className}>
+              <CustomNavLink
+                href="/admin/income"
+                isActive={location.pathname === "/admin/income"}
+                className={className}
+              >
                 <span>
                   <TbCurrencyDollar size={22} />
                 </span>
@@ -73,19 +105,31 @@ export const Sidebar = () => {
             </>
           )}
 
-          <CustomNavLink href="/winning-products" isActive={location.pathname === "/winning-products"} className={className}>
+          <CustomNavLink
+            href="/winning-products"
+            isActive={location.pathname === "/winning-products"}
+            className={className}
+          >
             <span>
               <RiAuctionLine size={22} />
             </span>
             <span>Winning Bids</span>
           </CustomNavLink>
-          <CustomNavLink href="/favorites" isActive={location.pathname === "/favorites"} className={className}>
+          <CustomNavLink
+            href="/favorites"
+            isActive={location.pathname === "/favorites"}
+            className={className}
+          >
             <span>
               <IoIosHeartEmpty size={22} />
             </span>
             <span>My Favorites</span>
           </CustomNavLink>
-          <CustomNavLink href="/profile" isActive={location.pathname === "/profile"} className={className}>
+          <CustomNavLink
+            href="/profile"
+            isActive={location.pathname === "/profile"}
+            className={className}
+          >
             <span>
               <IoSettingsOutline size={22} />
             </span>
