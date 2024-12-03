@@ -46,6 +46,23 @@ Traditional auction platforms often lack user-friendly interfaces, real-time upd
 
 auction-app/
 │
+├── backend/
+│   ├── models/
+│   │   ├── User.js
+│   │   ├── Auction.js
+│   │   └── Bid.js
+│   ├── routes/
+│   │   ├── userRoutes.js
+│   │   ├── auctionRoutes.js
+│   │   └── bidRoutes.js
+│   ├── config/
+│   │   └── db.js
+│   ├── middleware/
+│   │   ├── authMiddleware.js
+│   │   └── errorMiddleware.js
+│   ├── server.js
+│   └── .env
+│
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
