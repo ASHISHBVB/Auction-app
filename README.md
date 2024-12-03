@@ -85,5 +85,7 @@ Follow these steps to set up the project locally:
    ```bash
    npm start
    ```
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
    
 **Enjoy using the Bidding/Auction app! 🚀**
